@@ -3,6 +3,7 @@
   "displayName": "团团",
   "description": "一只软萌、友好的橘白短毛小猫。",
   "spritesheetPath": "spritesheet.webp",
+  "version": "v001",
   "author": "JbBom",
   "tags": [
     "cat",

@@ -1,8 +1,15 @@
 # 团团 Codex 桌面宠物
 
+**当前版本：`v001-original`**  
+**Pet metadata version: `v001`**
+
 **团团是一只软萌、友好的橘白短毛小猫。**
 
 它会眨眼、挥爪、等待、专注、跳起来，也会在任务失败时委屈地低下小脑袋。适合放在 Codex 旁边，安静陪你写代码、看 diff、等测试跑完。
+
+## English Intro
+
+Tuantuan `v001` is a soft, friendly orange-and-white shorthair kitten for Codex Pets. It comes with a validated `8x9` animated spritesheet, GIF previews for every supported state, and a ready-to-copy `pet.json` package. Drop it into `~/.codex/pets/tuantuan`, restart Codex, and let this tiny coding companion keep you company while you build, review, wait, and debug.
 
 ![团团挥爪](assets/preview/waving.gif)
 
@@ -15,7 +22,7 @@
 | 文件 | 结果 |
 |---|---|
 | `spritesheet.webp` | 与本机版本完全一致，SHA-256 为 `1b3b74e0688ad5db0b1e242eee4aa6facc746456f66cfe810877813b3ef65b62` |
-| `pet.json` | 仓库版保留同一只团团，并额外补充了 `author`、`tags`、`source`、`sourceUrl`，更适合分享和归档 |
+| `pet.json` | 仓库版保留同一只团团，并额外补充了 `version`、`author`、`tags`、`source`、`sourceUrl`，更适合分享和归档 |
 
 Spritesheet 校验通过：`1536x1872`、RGBA WebP、`8x9` atlas、透明像素残留为 `0`，没有 errors 或 warnings。
 
@@ -81,6 +88,8 @@ assets/
   contact-sheet.png
   preview/*.gif
 ```
+
+当前发布版本是 `v001-original`，对应 `pet.json` 中的 `version: "v001"`。
 
 `spritesheet.webp` 使用 Codex pet atlas 布局：
 
