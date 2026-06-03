@@ -2,7 +2,7 @@
 
 **一只软萌、友好的橘白短毛小猫。**
 
-由 [jbbom](https://github.com/jbbom) 在 Codex 中生成，托管于 [codex-pet-share](https://codex-pet-share.pages.dev)。
+由 [JbBom](https://github.com/JbBom) 在 Codex 中生成，托管于 [codex-pet-share](https://codex-pet-share.pages.dev)。
 
 ---
 
@@ -25,7 +25,7 @@
 
 ```bash
 # 1. 克隆仓库（或下载 ZIP）
-git clone https://github.com/jbbom/tuantuan-codex-pet.git
+git clone https://github.com/JbBom/tuantuan-codex-pet.git
 cd tuantuan-codex-pet
 
 # 2. 复制宠物到 Codex
@@ -41,7 +41,7 @@ ls ~/.codex/pets/tuantuan/
 ### 一键安装（快捷版）
 
 ```bash
-git clone https://github.com/jbbom/tuantuan-codex-pet.git /tmp/tuantuan && cp -r /tmp/tuantuan/v001-original ~/.codex/pets/tuantuan && rm -rf /tmp/tuantuan
+git clone https://github.com/JbBom/tuantuan-codex-pet.git /tmp/tuantuan && cp -r /tmp/tuantuan/v001-original ~/.codex/pets/tuantuan && rm -rf /tmp/tuantuan
 ```
 
 ---
@@ -93,7 +93,7 @@ rm -rf ~/.codex/pets/tuantuan
 
 ## 许可证
 
-[MIT](LICENSE) © jbbom
+[MIT](LICENSE) © JbBom
 
 ---
 

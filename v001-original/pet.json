@@ -3,7 +3,7 @@
   "displayName": "团团",
   "description": "一只软萌、友好的橘白短毛小猫。",
   "spritesheetPath": "spritesheet.webp",
-  "author": "jbbom",
+  "author": "JbBom",
   "tags": [
     "cat",
     "cute",
@@ -12,5 +12,5 @@
     "soft"
   ],
   "source": "github",
-  "sourceUrl": "https://github.com/jbbom/tuantuan-codex-pet"
+  "sourceUrl": "https://github.com/JbBom/tuantuan-codex-pet"
 }
