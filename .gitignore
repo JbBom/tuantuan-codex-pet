@@ -1,4 +1,6 @@
+work/
 .DS_Store
 Thumbs.db
 *.tmp
 *.log
+work-*.json
