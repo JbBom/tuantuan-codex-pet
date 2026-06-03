@@ -1,44 +1,39 @@
 # 团团 Codex 桌面宠物
 
-这个仓库现在保留两个宠物：
+**当前版本：`v001-original`**  
+**Pet metadata version: `v001`**
 
-- **团团**：原来的橘白小猫，目录 `v001-original`
-- **红泰狮金鱼**：新增的红色泰狮金鱼，目录 `v004-red-taishi-goldfish`
+**团团是一只软萌、友好的橘白短毛小猫。**
 
-猫不会被金鱼覆盖。安装时它们应该放进两个不同的 Codex pets 目录：`tuantuan` 和 `red-taishi-goldfish`。
+它会眨眼、挥爪、等待、专注、跳起来，也会在任务失败时委屈地低下小脑袋。适合放在 Codex 旁边，安静陪你写代码、看 diff、等测试跑完。
 
 ## English Intro
 
-This repository keeps the original Tuantuan orange-and-white kitten and adds a separate red Thai lionhead goldfish pet. They use different pet IDs, so installing the goldfish will not replace the cat.
+Tuantuan `v001` is a soft, friendly orange-and-white shorthair kitten for Codex Pets. It comes with a validated `8x9` animated spritesheet, GIF previews for every supported state, and a ready-to-copy `pet.json` package. Drop it into `~/.codex/pets/tuantuan`, restart Codex, and let this tiny coding companion keep you company while you build, review, wait, and debug.
 
-| Pet | Version | Install directory |
-|---|---|---|
-| 团团小猫 | `v001-original` | `~/.codex/pets/tuantuan` |
-| 红泰狮金鱼 | `v004-red-taishi-goldfish` | `~/.codex/pets/red-taishi-goldfish` |
+![团团挥爪](assets/preview/waving.gif)
 
-## 金鱼预览
+由 [JbBom](https://github.com/JbBom) 在 Codex 中生成，托管于 [codex-pet-share](https://codex-pet-share.pages.dev)。
 
-![红泰狮金鱼挥鳍](assets/v004/preview/waving.gif)
+## 预览
 
 | 待机 | 工作中 | 认真 review |
 |---|---|---|
-| ![idle](assets/v004/preview/idle.gif) | ![running](assets/v004/preview/running.gif) | ![review](assets/v004/preview/review.gif) |
+| ![idle](assets/preview/idle.gif) | ![running](assets/preview/running.gif) | ![review](assets/preview/review.gif) |
 
-| 向右游 | 向左游 | 跳起来 |
+| 向右跑 | 向左跑 | 跳起来 |
 |---|---|---|
-| ![running right](assets/v004/preview/running-right.gif) | ![running left](assets/v004/preview/running-left.gif) | ![jumping](assets/v004/preview/jumping.gif) |
+| ![running right](assets/preview/running-right.gif) | ![running left](assets/preview/running-left.gif) | ![jumping](assets/preview/jumping.gif) |
 
 | 等你一下 | 失败委屈 | 打招呼 |
 |---|---|---|
-| ![waiting](assets/v004/preview/waiting.gif) | ![failed](assets/v004/preview/failed.gif) | ![waving](assets/v004/preview/waving.gif) |
+| ![waiting](assets/preview/waiting.gif) | ![failed](assets/preview/failed.gif) | ![waving](assets/preview/waving.gif) |
 
 完整精灵图总览：
 
-![红泰狮金鱼精灵图总览](assets/v004/contact-sheet.png)
+![团团精灵图总览](assets/contact-sheet.png)
 
 ## 安装
-
-### 安装两个宠物
 
 ```bash
 git clone https://github.com/JbBom/tuantuan-codex-pet.git
@@ -46,38 +41,10 @@ cd tuantuan-codex-pet
 
 mkdir -p ~/.codex/pets
 rm -rf ~/.codex/pets/tuantuan
-rm -rf ~/.codex/pets/red-taishi-goldfish
-cp -R v001-original ~/.codex/pets/tuantuan
-cp -R v004-red-taishi-goldfish ~/.codex/pets/red-taishi-goldfish
-```
-
-安装后重启 Codex，在 **Settings -> Pets** 中可以分别选择 **团团** 或 **红泰狮金鱼**。
-
-### 只安装原来的猫
-
-```bash
-mkdir -p ~/.codex/pets
-rm -rf ~/.codex/pets/tuantuan
 cp -R v001-original ~/.codex/pets/tuantuan
 ```
 
-### 只安装金鱼
-
-```bash
-mkdir -p ~/.codex/pets
-rm -rf ~/.codex/pets/red-taishi-goldfish
-cp -R v004-red-taishi-goldfish ~/.codex/pets/red-taishi-goldfish
-```
-
-## 版本说明
-
-| 版本 | 说明 |
-|---|---|
-| `v001-original` | 原始橘白小猫版本，保留为 `tuantuan` |
-| `v003-red-taishi-goldfish` | 废弃实验版，错误地复用了 `tuantuan` id |
-| `v004-red-taishi-goldfish` | 当前金鱼版本，独立 id：`red-taishi-goldfish` |
-
-`v004-red-taishi-goldfish/spritesheet.webp` 已通过 Codex pet atlas 校验：`1536x1872`、RGBA WebP、`8x9` atlas、透明像素残留为 `0`，没有 errors 或 warnings。
+安装后重启 Codex，在 **Settings -> Pets** 中选择 **团团**。
 
 ## 宠物文件
 
@@ -86,15 +53,27 @@ v001-original/
   pet.json
   spritesheet.webp
 
-v004-red-taishi-goldfish/
-  pet.json
-  spritesheet.webp
-
 assets/
-  v004/contact-sheet.png
-  v004/preview/*.gif
+  contact-sheet.png
+  preview/*.gif
 ```
+
+`spritesheet.webp` 使用 Codex pet atlas 布局：
+
+| 行 | 状态 | 帧数 |
+|---|---|---:|
+| 0 | `idle` | 6 |
+| 1 | `running-right` | 8 |
+| 2 | `running-left` | 8 |
+| 3 | `waving` | 4 |
+| 4 | `jumping` | 5 |
+| 5 | `failed` | 8 |
+| 6 | `waiting` | 6 |
+| 7 | `running` | 6 |
+| 8 | `review` | 6 |
 
 ## 许可证
 
 [MIT](LICENSE) © JbBom
+
+用爱、Codex，以及一点点猫咪耐心生成。
