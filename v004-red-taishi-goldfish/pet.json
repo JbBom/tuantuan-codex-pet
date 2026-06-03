@@ -1,0 +1,18 @@
+{
+  "id": "red-taishi-goldfish",
+  "displayName": "红泰狮金鱼",
+  "description": "一条圆润可爱的红色泰狮金鱼，带着饱满头瘤和飘逸尾鳍。",
+  "spritesheetPath": "spritesheet.webp",
+  "version": "v004",
+  "author": "JbBom",
+  "tags": [
+    "goldfish",
+    "taishi",
+    "thai-lionhead",
+    "red",
+    "cute",
+    "fish"
+  ],
+  "source": "github",
+  "sourceUrl": "https://github.com/JbBom/tuantuan-codex-pet"
+}
